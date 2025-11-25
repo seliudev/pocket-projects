@@ -6,6 +6,7 @@ import Calculator from "./projects/Calculator";
 import LightSwitch from "./projects/LightSwitch";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import About from "./pages/About.tsx";
 
 const App: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
                 <main className="flex-grow container mx-auto px-4 py-6">
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="/counter" element={<Counter />} />
                         <Route path="/calculator" element={<Calculator />} />
                         <Route path="/light-switch" element={<LightSwitch />} />

@@ -19,7 +19,7 @@ const NavBar = () => {
                     <Link to="/" className="hover:text-indigo-200">
                         Home
                     </Link>
-                    <Link to="/" className="hover:text-indigo-200">
+                    <Link to="/about" className="hover:text-indigo-200">
                         About
                     </Link>
                 </div>
