@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Counter from "./projects/Counter";
+import Calculator from "./projects/Calculator";
+import LightSwitch from "./projects/LightSwitch";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => {
+    return (
+        <Router>
+            <div className="flex flex-col min-h-screen">
+                <NavBar />
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+                <main className="flex-grow container mx-auto px-4 py-6">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/counter" element={<Counter />} />
+                        <Route path="/calculator" element={<Calculator />} />
+                        <Route path="/light-switch" element={<LightSwitch />} />
+                    </Routes>
+                </main>
 
-export default App
+                <Footer />
+            </div>
+        </Router>
+    );
+};
+
+export default App;
