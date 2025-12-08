@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import lightswitch from "../assets/lightswitch.jpeg";
 import counter from "../assets/counter.jpeg";
 import calculator from "../assets/calculator.jpeg";
+import apptodo from "../assets/apptodo.jpeg";
 
 const Home: React.FC = () => {
     const projects = [
@@ -24,6 +25,12 @@ const Home: React.FC = () => {
             href: "/counter",
             image: counter,
         },
+        {
+            title: "Todo App",
+            description: "A simple todo application to manage tasks.",
+            href: "/app-todo",
+            image: apptodo,
+        }
     ];
 
     const [startIndex, setStartIndex] = useState(0);

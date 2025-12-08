@@ -7,6 +7,7 @@ import LightSwitch from "./projects/LightSwitch";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import About from "./pages/About.tsx";
+import AppToDo from "./projects/AppToDo";
 
 const App: React.FC = () => {
     return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
                         <Route path="/counter" element={<Counter />} />
                         <Route path="/calculator" element={<Calculator />} />
                         <Route path="/light-switch" element={<LightSwitch />} />
+                        <Route path="/app-todo" element={<AppToDo />} />
                     </Routes>
                 </main>
 
