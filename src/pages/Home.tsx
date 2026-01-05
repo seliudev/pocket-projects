@@ -5,6 +5,7 @@ import counter from "../assets/counter.jpeg";
 import calculator from "../assets/calculator.jpeg";
 import apptodo from "../assets/apptodo.jpeg";
 import customdropdown from "../assets/customdropdown.jpeg";
+import tictactoe from "../assets/tictactoe.jpeg";
 
 const Home: React.FC = () => {
     const projects = [
@@ -37,8 +38,13 @@ const Home: React.FC = () => {
             description: "A reusable custom dropdown button component.",
             href: "/custom-dropdown",
             image: customdropdown,
+        },
+        {
+            title: "Tic Tac Toe",
+            description: "Play the classic Tic Tac Toe game against algorithm.",
+            href: "/tictactoe",
+            image: tictactoe,
         }
-
     ];
 
     const [startIndex, setStartIndex] = useState(0);

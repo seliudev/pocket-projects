@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import About from "./pages/About.tsx";
 import AppToDo from "./projects/AppToDo";
 import DropdownButton from "./projects/Dropdown";
+import TicTacToe from "./projects/TicTacToe";
 
 const App: React.FC = () => {
     return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
                         <Route path="/light-switch" element={<LightSwitch />} />
                         <Route path="/app-todo" element={<AppToDo />} />
                         <Route path="/custom-dropdown" element={<DropdownButton />} />
+                        <Route path="/tictactoe" element={<TicTacToe />} />
                     </Routes>
                 </main>
 
