@@ -4,6 +4,7 @@ import lightswitch from "../assets/lightswitch.jpeg";
 import counter from "../assets/counter.jpeg";
 import calculator from "../assets/calculator.jpeg";
 import apptodo from "../assets/apptodo.jpeg";
+import customdropdown from "../assets/customdropdown.jpeg";
 
 const Home: React.FC = () => {
     const projects = [
@@ -30,7 +31,14 @@ const Home: React.FC = () => {
             description: "A simple todo application to manage tasks.",
             href: "/app-todo",
             image: apptodo,
+        },
+        {
+            title: "Custom Dropdown",
+            description: "A reusable custom dropdown button component.",
+            href: "/custom-dropdown",
+            image: customdropdown,
         }
+
     ];
 
     const [startIndex, setStartIndex] = useState(0);

@@ -67,7 +67,7 @@ const AppToDo = () => {
                     </button>
                 </div>
 
-                {/* Scrollable Todo List */}
+                {/* Scrollable to do List */}
                 <div className="max-h-[70vh] overflow-y-auto pr-2 mt-10">
                     <ul>
                         {todos.map((todo) => (
